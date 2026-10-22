@@ -1,0 +1,57 @@
+# Rust build products. Keep Cargo.lock files for reproducible application builds.
+target/
+
+# Generated Tauri schemas and permissions.
+/metabokit-gui/crates/metabokit-app/gen/
+**/src-tauri/gen/
+
+# JavaScript dependencies and build output (including the original visualizers).
+node_modules/
+dist/
+dist-ssr/
+coverage/
+playwright-report/
+test-results/
+
+# Local datasets and processing output. Keep source, fixtures, and libraries
+# outside these directories if they should be committed.
+/data/
+/data_dir*/
+/datasets/
+/results*/
+*.mzML
+*.mzml
+*.mzXML
+*.mzxml
+*.raw
+*.RAW
+
+# Local configuration, signing credentials, and logs.
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.local
+*.p8
+*.p12
+*.pfx
+*.key
+*.pem
+*.mobileprovision
+*.provisionprofile
+*.log
+
+# OS metadata and editor scratch files.
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.swp
+*.swo
+*~

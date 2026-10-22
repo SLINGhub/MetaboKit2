@@ -1,0 +1,19 @@
+[package]
+name = "metabokit-dia"
+version.workspace = true
+edition = "2024"
+rust-version = "1.88"
+license = "BSD-3-Clause"
+
+[dependencies]
+metabokit-core = { path = "../metabokit-core" }
+base64 = "0.23.1"
+quick-xml = "0.42.0"
+flate2 = "1.1.10"
+csv.workspace = true
+glob.workspace = true
+rayon.workspace = true
+regex.workspace = true
+toml.workspace = true
+serde.workspace = true
+serde_json.workspace = true
